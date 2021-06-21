@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/homepage.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet"/>
+
+    <title>STUDIO 80</title>
+</head>
+<body>
+<div id="top"></div>
+<div class="container">
+
+    <!--  Header  -->
+    <header class="header">
+        <a href="homepage.html">
+            <img class="header-logo" src="Assets/guitar.png" alt="website logo"/>
+        </a>
+        <a href="homepage.html" class="site-name">
+            <span id="site-name">STUDIO 80</span>
+        </a>
+        <nav class="header-nav">
+            <ul class="header-nav-links-container">
+                <li><a class="header-nav-link" href="news.html">NEWS</a></li>
+                <li><a class="header-nav-link" href="imageSelector.html">TICKETS</a></li>
+                <li><a class="header-nav-link" href="store.html">MERCH</a></li>
+                <li><a class="header-nav-link" href="team.html">TEAM</a></li>
+            </ul>
+        </nav>
+        <a id="feedbackButton" href="feedbackForm.html">
+            <button>CONTACT US</button>
+        </a>
+    </header>
+
+    <!--/******************************* end of header *************************/-->
+
+    <div class="firstPage">
+        <!--Video in the first page-->
+        <video class="backgroundVideo" controls loop>
+            <source src="Assets/HomePage/background.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="tourPage">
+        <!--Vertical line design in the tour page-->
+        <div class="vertical"></div>
+        <br/>
+        <br/>
+        <h1 class="upcomingTours">UPCOMING TOURS</h1>
+
+        <!--Information about upcoming tours-->
+        <div class="tourInfo">
+            <div class="tourInfoContent">
+                <img class="imageCircle" src="Assets/HomePage/circleWhite.png" alt="white dot for indication"/>
+                27th August<br/>
+                Lewis Capaldi<br/>
+                THE 02, LONDON<br/>
+            </div>
+
+            <div class="tourInfoContent">
+                <img class="imageCircle" src="Assets/HomePage/circleWhite.png" alt="white dot for indication"/>
+                28th August<br/>
+                NF<br/>
+                GLASTONBURY MUSIC FESTIVAL<br/>
+            </div>
+            <div class="tourInfoContentFinal">
+                <img class="imageCircle" src="Assets/HomePage/circleWhite.png" alt="white dot for indication"/>
+                22nd September<br/>
+                NF - REBEL ENTERTAINMENT CENTRE,<br/>
+                TORONTON, CANADA.
+            </div>
+        </div>
+        <a href="imageSelector.html">
+            <!--Button to book tickets-->
+            <button onclick="ticketPage()" class="bookTickets">BOOK TICKETS</button></a>
+    </div>
+    <div class="thirdPage">
+        <!--album covers on the quiz details page-->
+        <img id="divide" src="Assets/HomePage/divide.jpg" alt="divide Album Cover"/>
+        <img id="ts1989Cover" src="Assets/HomePage/1989.jpg" alt="1989 Album Cover"/>
+
+        <img id="tellthetruth" src="Assets/HomePage/tellthetruth.jpg" alt="tell the truth Album Cover"/>
+        <div class="quizContent">
+            <h2>
+                CHECK YOUR KNOWLEDGE <br/>
+                BY ENTERING OUR QUIZ
+            </h2>
+            <br/>
+            <br/>
+            <!--paragraph to inform user about music quiz-->
+            <p>
+                Enter our weekly quiz and check your <br/>
+                knowledge to see how much of a <br/>
+                musicophile you are.
+            </p>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <!--Button to enter quiz-->
+            <a href="musicQuiz.html">
+                <button class="toQuiz">TAKE THE QUIZ</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="fourthPage">
+        <!--extra pages of all four members are can be accessed from here-->
+        <!-- Slideshow container -->
+        <div class="slideContainer">
+
+            <div class="slides">
+                <a href="article1.html">
+                    <div class="txtContainerForNews">
+                        <p class="slideHeader">Kanye West Holds Presidential Campaign Event in South Carolina -> READ MORE</p>
+
+
+                    </div>
+
+                    <img class="newsImg" src="Assets/News/kanye.jpg" alt="kanye west image"/>
+                </a>
+            </div>
+
+            <div class="slides">
+                <a href="article2.html">
+                    <div class="txtContainerForNews">
+                        <p class="slideHeader">Charli XCX Announces New Documentary About Quarantine Album -> READ MORE</p>
+
+
+                    </div>
+
+                    <img class="newsImg" src="Assets/News/charliXCX.png" alt="charlie XCX image "/>
+                </a>
+            </div>
+
+            <div class="slides">
+                <a href="article3.html">
+                    <div class="txtContainerForNews">
+                        <p class="slideHeader">Doves Announce First Album in 11 Years -> READ MORE</p>
+
+
+                    </div>
+
+                    <img class="newsImg" src="Assets/News/Doves.jpg" alt="Doves image"/>
+                </a>
+            </div>
+
+            <div class="slides">
+                <a href="article4.html">
+                    <div class="txtContainerForNews">
+                        <p class="slideHeader">England Will Allow Indoor Concerts Beginning Next Month -> READ MORE</p>
+
+
+                    </div>
+
+                    <img class="newsImg" src="Assets/News/RoyalAlbertHall.jpg" alt="theature image"/>
+                </a>
+            </div>
+
+            <!-- To go back and go to next slide -->
+            <a class="back" onclick="slidePlus(-1)">&#10094;</a>
+            <a class="next" onclick="slidePlus(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="footer">
+        <a href="homepage.html">
+            <img class="footer-logo" src="Assets/guitar.png" alt="website logo"/>
+        </a>
+        <a href="homepage.html" class="footer-site-name">
+            <span id="footer-site-name">STUDIO<br>80</span>
+        </a>
+
+        <div class="footer-signUp-text">
+            <label for="newsletterEmailTextField" id="lblNewsLetterEmail">Subscribe to our newsletter to receive
+                updates and special announcements.</label><br>
+            <input id="newsletterEmailTextField" type="email" placeholder="Email address" />
+            <br/>
+            <button onclick="signInBtnClicked();" id="signUpBtnFooter">Sign up</button>
+        </div>
+
+        <div class="footer-links">
+            <a href="news.html">NEWS</a><br>
+            <a href="imageSelector.html">TICKETS</a><br>
+            <a href="store.html">MERCH</a><br>
+            <a href="musicQuiz.html">QUIZ</a><br>
+            <a href="team.html">TEAM</a><br>
+            <a href="siteMap.html">SITEMAP</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">Page Developed By:<br>
+                <a href="student2EditorPage.html" class="page-editor">Sashminda Withanage</a>
+            </span>
+        </div>
+    </footer>
+</div>
+</body>
+<!--connecting the javascript-->
+<script src="JavaScript/homepage.js"></script>
+</html>

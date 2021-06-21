@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Title of the page -->
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="Stylesheets/storeForm.css">
+    <script src="JavaScript/storeForm.js"></script>
+</head>
+<body>
+<!--  Header  -->
+<header class="header">
+    <a href="homepage.html">
+        <img class="header-logo" src="Assets/guitar.png" alt="logo"/>
+    </a>
+    <a href="homepage.html" class="site-name">
+        <span id="site-name">STUDIO 80</span>
+    </a>
+    <!-- Header links -->
+    <nav class="header-nav">
+        <ul class="header-nav-links-container">
+            <li><a class="header-nav-link" href="news.html">NEWS</a></li>
+            <li><a class="header-nav-link" href="imageSelector.html">TICKETS</a></li>
+            <li><a class="header-nav-link active-page" href="store.html">MERCH</a></li>
+            <li><a class="header-nav-link" href="team.html">TEAM</a></li>
+        </ul>
+    </nav>
+    <a id="feedbackButton" href="feedbackForm.html"><button>CONTACT US</button></a>
+</header><br><br><br><br><br><br>
+
+<div class="wrapper">
+    <!-- main topic -->
+    <h2>Order Confirmation</h2>
+    <div id="error_message"></div>
+
+    <!-- Calling javascript function -->
+    <form id="myform" onsubmit="return validate();">
+
+        <!-- The text fields -->
+        <div class="input_field">
+            <input type="text" placeholder="Name" id="name">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Shipping Address" id="shippingAddress">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone">
+        </div>
+        <div class="input_field">
+            <input type="text" placeholder="Email" id="email">
+        </div>
+        <!-- Payment method bar -->
+        <div>
+            <label for="Pmethod">Select Payment<br> Method:  </label>
+            <select  id="Pmethod">
+                <option value="VISA">VISA</option>
+                <option value="MASTERCARD">MASTERCARD</option>
+                <option value="AMEX">AMEX</option>
+            </select>
+        </div><br>
+        <div class="input_field">
+            <textarea placeholder="Card Number" id="Cnumber"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div class="btn">
+            <input type="submit">
+        </div>
+    </form>
+</div>
+
+<!--  Footer  -->
+<footer class="footer">
+    <a href="homepage.html">
+        <img class="footer-logo" src="Assets/guitar.png" alt="logo"/>
+    </a>
+    <a href="homepage.html" class="footer-site-name">
+        <span id="footer-site-name">STUDIO<br>80</span>
+    </a>
+
+    <div class="footer-signUp-text">
+        <label for="newsletterEmailTextField" id="lblNewsLetterEmail">Subscribe to our newsletter to receive
+            updates and special announcements.</label><br>
+        <input id="newsletterEmailTextField" type="email" placeholder="Email address" />
+        <br/>
+
+        <!-- Button sign up and event handler -->
+        <button onclick="signInBtnClicked();" id="signUpBtnFooter">Sign up</button>
+    </div>
+
+    <!-- Footer links -->
+    <div class="footer-links">
+        <a href="news.html">NEWS</a><br>
+        <a href="imageSelector.html">TICKETS</a><br>
+        <a href="store.html">MERCH</a><br>
+        <a href="musicQuiz.html">QUIZ</a><br>
+        <a href="team.html">TEAM</a><br>
+        <a href="siteMap.html">SITEMAP</a><br>
+    </div>
+
+    <div class="footer-editor">
+            <span id="footerEditor">Page Developed By:<br>
+                <a href="student1EditorPage.html" class="page-editor">Nisal Bandara</a>
+            </span>
+    </div>
+</footer>
+
+
+</body>
+</html>

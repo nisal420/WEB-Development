@@ -1,0 +1,522 @@
+/*
+    ====== EXTERNAL CSS FILE STUDENT TWO ======
+
+*/
+
+/*----------------------------------Main page----------------------------------------------------*/
+
+/* --------------------- Header --------------------- */
+.header {
+    background-color: #222831;
+    min-height: 70px;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header-logo {
+    height: 60px;
+    cursor: pointer;
+
+    margin-top: 5px;
+    margin-left: 20px;
+    grid-column: 1/2;
+}
+
+.header-logo:hover {
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+}
+
+.site-name {
+    grid-column: 2/3;
+    margin-top: 10px;
+}
+
+#site-name {
+    font-family: "Metal Mania", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+#site-name:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav li,
+nav a {
+    font-family: "Metal Mania", sans-serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.active-page {
+    border-bottom: 3px solid white;
+}
+
+.active-page:hover {
+    border-bottom: 3px solid #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav {
+    grid-column: 11/12;
+
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.header-nav-links-container {
+    list-style: none; /* removes default bullet points */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav-links-container > li {
+    padding-left: 40px;
+}
+
+.header-nav-links-container > li:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav-link:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#feedbackButton {
+    grid-column: 12/12;
+}
+
+header button {
+    padding: 4px 15px;
+    margin-top: 17px;
+    margin-right: 20px;
+    width: 160px;
+
+    background-color: rgba(256, 256, 256, 1);
+    cursor: pointer;
+    font-family: "Metal Mania", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #222831;
+    text-decoration: none;
+    border: none;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #C1A57B;
+    color: black;
+
+    transition: all 0.3s ease 0s;
+}
+
+/* -------------------------------------------------- */
+
+/* first page*/
+.firstPage {
+
+    zoom: 80%;
+    height: 1080px;
+    position: relative;
+}
+/*background video on home page*/
+.backgroundVideo {
+    width: auto;
+    height: auto;
+
+}
+
+/*------ Second page content and CSS ------ */
+
+.tourPage {
+    /* second page*/
+    font-family: "Roboto", black, sans-serif;
+    background-color: #30475e;
+    width: 1920px;
+    height: 1080px;
+    color: white;
+    display: inline-block;
+    zoom: 80%;
+}
+
+.vertical {
+    /*vertical line in tourpage*/
+
+    border-left: 5px solid white;
+    height: 1080px;
+    position: absolute;
+    margin-left: 175px;
+}
+/*small circle on tour data page*/
+.imageCircle {
+    color: #ececec;
+    position: absolute;
+    left: 163px;
+    height: 40px;
+    width: 40px;
+}
+
+.tourInfo {
+    margin-left: 255px;
+    font-size: 35px;
+}
+.tourInfoContent {
+    /* tour informations class*/
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+.tourInfoContentFinal {
+    /*increased line height for increased usability*/
+    line-height: 1.5;
+}
+
+.upcomingTours {
+    margin-top: 55px;
+    margin-left: 255px;
+    font-size: 50px;
+    margin-bottom: 90px;
+}
+/*button to book tickets*/
+.bookTickets {
+    margin-right: 100px;
+    float: right;
+    height: 70px;
+    width: 350px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+/*button hover option*/
+.bookTickets:hover {
+    background-color: #c1a57b;
+    color: white;
+}
+
+/*------ Third page content and CSS ------ */
+
+.thirdPage {
+    zoom: 80%;
+    font-family: "Roboto", black, sans-serif;
+    background-color: #ececec;
+    width: 1920px;
+    height: 1080px;
+}
+
+p {
+    /* information about quiz*/
+    font-size: 35px;
+    line-height: 1.5;
+}
+h2 {
+    /*quiz heading*/
+    font-size: 55px;
+}
+.toQuiz {
+    /*button to begin the quiz*/
+    zoom: 80%;
+    height: 70px;
+    width: 350px;
+    background-color: #6e0a02;
+    color: white;
+    font-weight: 700;
+
+    font-size: 20px;
+    cursor: pointer;
+}
+.toQuiz:hover {
+    background-color: #330000;
+}
+
+#divide {
+    /* album covers on page three*/
+
+    position: relative;
+    z-index: 0;
+    float: right;
+    margin-right: 600px;
+    margin-top: 700px;
+    height: 250px;
+    width: 250px;
+}
+#tellthetruth {
+    /* album covers on page three*/
+    margin-top: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 2300px;
+    left: 1200px;
+    height: 400px;
+    width: 400px;
+}
+#ts1989Cover {
+    /* album covers on page three*/
+    height: 250px;
+    width: 250px;
+    z-index: 0;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 1070px;
+}
+
+.quizContent {
+    position: absolute;
+    left: 90px;
+    top: 2300px;
+}
+
+/*------ fourth page content and CSS ------ */
+
+.fourthPage {
+    zoom: 80%;
+    width: 1920px;
+    height: 1080px;
+}
+
+/*---------------slide show CSS------------------*/
+
+/* Slide container */
+.slideContainer {
+    width: 1920px;
+    height: 1080px;
+}
+
+/* Slides */
+.slides {
+    padding: 100px;
+    text-align: right;
+}
+.slideHeader {
+    font-family: Arial Narrow, arial, helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 150px;
+    font-size: 45px;
+}
+
+#slideDescription {
+    font-family: "Darker Grotesque", sans-serif;
+    margin-left: 150px;
+    font-size: 30px;
+}
+/*container in news page that contains details*/
+.txtContainerForNews {
+    color: white;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    z-index: 6;
+    background-color: black;
+    width: 1000px;
+    height: 350px;
+    top: 3970px;
+    opacity: 0.6;
+
+    transition: width 1.5s;
+}
+/*increased width on hover */
+.txtContainerForNews:hover {
+    width: 1920px;
+}
+
+/* Next & previous buttons */
+.back,
+.next {
+    z-index: 3;
+    cursor: pointer;
+    position: absolute;
+    padding: 50px;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    opacity: 0.5; /*to see through*/
+}
+
+/* Position the "next button" to the right */
+.next {
+    left: 1810px;
+}
+.back {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.next:hover,
+.back:hover {
+    background-color: black;
+    opacity: 1;
+    color: white;
+}
+
+
+/*--------slides and images-------------*/
+
+.newsImg {
+    z-index: 2;
+    width: 1920px;
+    height: 1080px;
+    left: 0;
+    top: 3250px;
+    position: absolute;
+}
+
+/*----------------------------------------------*/
+
+/* ---------------------------------------  Footer  ------------------------------------------- */
+.footer {
+    background-color: #222831;
+    min-height: 200px;
+    min-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(3, auto);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.footer-logo {
+    grid-row: 1/4;
+    grid-column: 1/2;
+
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.footer-site-name {
+    grid-row: 1/4;
+    grid-column: 2/3;
+
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+#footer-site-name {
+    font-family: "Metal Mania", serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+#footer-site-name:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-signUp-text {
+    grid-row: 1/4;
+    grid-column: 3/4;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 70%;
+    max-width: 450px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#newsletterEmailTextField {
+    padding: 5px 8px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+#newsletterEmailTextField:focus {
+    border: 3px solid #C1A57B;
+    outline: none;
+    color: #C1A57B;
+}
+
+#signUpBtnFooter {
+    padding: 5px 8px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: #FFFFFF;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #000000;
+}
+
+#signUpBtnFooter:hover {
+    background-color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-links {
+    grid-row: 1/4;
+    grid-column: 4/5;
+    margin-top: 30px;
+    /*margin-left: 30px;*/
+}
+
+.footer-links > a {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    /*margin-left: 30px;*/
+    margin-top: 10px;
+}
+
+.footer-links > a:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-editor {
+    grid-row: 1/4;
+    grid-column: 5/6;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.page-editor {
+    text-decoration: none;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.page-editor:hover {
+    color: #C1A57B;
+    border-bottom: 2px solid #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+.container{
+    zoom:80%;
+}

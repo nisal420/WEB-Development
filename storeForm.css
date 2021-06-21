@@ -1,0 +1,353 @@
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+/* Page design and layout */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Raleway';
+}
+
+/* Page color */
+body{
+  background: whitesmoke;
+}
+
+/* --------------------- Header --------------------- */
+.header {
+  background-color: #222831;
+  min-height: 70px;
+  min-width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header-logo {
+  height: 60px;
+  cursor: pointer;
+
+  margin-top: 5px;
+  margin-left: 20px;
+  grid-column: 1/2;
+}
+
+.site-name {
+  grid-column: 2/3;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+#site-name {
+  font-family: "Metal Mania", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+}
+
+#site-name:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav li,
+nav a {
+  font-family: "Metal Mania", sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+
+.active-page {
+  border-bottom: 3px solid white;
+}
+
+.active-page:hover {
+  border-bottom: 3px solid #C1A57B;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav {
+  grid-column: 11/12;
+
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.header-nav-links-container {
+  list-style: none; /* removes default bullet points */
+
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav-links-container > li {
+  padding-left: 40px;
+}
+
+.header-nav-links-container > li:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav-link:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#feedbackButton {
+  grid-column: 12/12;
+}
+
+header button {
+  padding: 4px 15px;
+  margin-top: 17px;
+  margin-right: 20px;
+  width: 160px;
+
+  background-color: rgba(256, 256, 256, 1);
+  cursor: pointer;
+  font-family: "Metal Mania", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #222831;
+  text-decoration: none;
+  border: none;
+  letter-spacing: 1px;
+
+  transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+  background-color: #C1A57B;
+  color: black;
+
+  transition: all 0.3s ease 0s;
+}
+
+/* -------------------------------------------------- */
+
+/* -----------------------The form Layout and effects------------------- */
+.wrapper{
+  position: relative;
+  /*top: 50%;*/
+  left: 50%;
+  margin-top: 250px;
+  margin-bottom: -230px;
+  transform: translate(-50%,-50%);
+  max-width: 350px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px rgba(254,236,164,1);
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+/* ---------------------------------- */
+
+/* Form input field layout and colors */
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+  font-family: "Metal Mania"
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+  font-family: "Metal Mania"
+}
+
+/* submit button layout and colors */
+.wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #fece0c;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.Pmethod{
+  font-family: 'Raleway';
+}
+
+/* Error message(JS validation) layout desgin and color */
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+/* ---------------------------------------  Footer  ------------------------------------------- */
+.footer {
+  position: relative;
+  background-color: #222831;
+  min-height: 200px;
+  min-width: 100%;
+  bottom: 0;
+
+
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(3, auto);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.footer-logo {
+  grid-row: 1/4;
+  grid-column: 1/2;
+
+  height: 150px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.footer-site-name {
+  grid-row: 1/4;
+  grid-column: 2/3;
+
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+#footer-site-name {
+  font-family: "Metal Mania", serif;
+  letter-spacing: 2px;
+  font-size: 35px;
+  color: #FFFFFF;
+}
+
+#footer-site-name:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-signUp-text {
+  grid-row: 1/4;
+  grid-column: 3/4;
+  margin-top: 10px;
+  margin-left: 30px;
+  width: 70%;
+  max-width: 450px;
+
+  font-family: "Darker Grotesque", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+#newsletterEmailTextField {
+  padding: 5px 8px;
+  margin-top: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: 3px solid #FFFFFF;
+
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+
+#newsletterEmailTextField:focus {
+  border: 3px solid #C1A57B;
+  outline: none;
+  color: #C1A57B;
+}
+
+#signUpBtnFooter {
+  padding: 5px 8px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #FFFFFF;
+
+  font-family: "Darker Grotesque", sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #000000;
+}
+
+#signUpBtnFooter:hover {
+  background-color: #C1A57B;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-links {
+  grid-row: 1/4;
+  grid-column: 4/5;
+  margin-top: 20px;
+
+}
+
+.footer-links > a {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+
+  margin-top: 8px;
+}
+
+.footer-links > a:hover {
+  color: #C1A57B;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-editor {
+  grid-row: 1/4;
+  grid-column: 5/6;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 25px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.page-editor {
+  text-decoration: none;
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+
+.page-editor:hover {
+  color: #C1A57B;
+  border-bottom: 2px solid #C1A57B;
+  transition: all 0.3s ease 0s;
+}

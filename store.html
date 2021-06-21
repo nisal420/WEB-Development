@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Title of the page -->
+    <title>Studio 80 | Merch</title>
+    <link rel="stylesheet" href="Stylesheets/store.css" />
+    <script src="JavaScript/store.js" async></script>
+</head>
+<body>
+<!--  Header  -->
+<header class="header">
+    <a href="homepage.html">
+        <img class="header-logo" src="Assets/guitar.png" alt="logo"/>
+    </a>
+    <a href="homepage.html" class="site-name">
+        <span id="site-name">STUDIO 80</span>
+    </a>
+    <!-- Header links -->
+    <nav class="header-nav">
+        <ul class="header-nav-links-container">
+            <li><a class="header-nav-link" href="news.html">NEWS</a></li>
+            <li><a class="header-nav-link" href="imageSelector.html">TICKETS</a></li>
+            <li><a class="header-nav-link active-page" href="store.html">MERCH</a></li>
+            <li><a class="header-nav-link" href="team.html">TEAM</a></li>
+        </ul>
+    </nav>
+    <a id="feedbackButton" href=""><button>CONTACT US</button></a>
+</header><br><br><br><br><br><br>
+<!-- Main topic -->
+<h1 class="topic">STORE<hr></h1>
+
+<!-- Album Item content section -->
+<section class="container content-section">
+    <h2 class="section-header">MUSIC</h2>
+
+    <!-- Music album items -->
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Album 1<br>[Appettie for Destruction]</span>
+            <!-- Image location of album1 -->
+            <img class="shop-item-image" src="Assets/Store/album1.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$24.99</span>
+                <!-- Album1 button -->
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Album 2<br>[Mansion]</span>
+            <!-- Image location of album2 -->
+            <img class="shop-item-image" src="Assets/Store/album2.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$14.99</span>
+                <!-- Album2 button -->
+                <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Album 3<br>[The Dark Side of the Moon]</span>
+            <!-- Image location of album3 -->
+            <img class="shop-item-image" src="Assets/Store/album3.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$19.99</span>
+                <!-- Album 3 button -->
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Album 4 <br>[Starboy]</span>
+            <!-- Image location of album4 -->
+            <img class="shop-item-image" src="Assets/Store/album4.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$9.99</span>
+                <!-- Album 4 button -->
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Merch item content section -->
+<section class="container content-section">
+    <h2 class="section-header">MERCH</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Rolling Stones T-Shirt</span>
+            <img class="shop-item-image" src="Assets/Store/tshirt.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$39.99</span>
+                <!-- Button for tshirt -->
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Fender Electric Guitar <br>Masterbuild '69</span>
+            <img class="shop-item-image" src="Assets/Store/guitar.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">$1499.99</span>
+                <!-- Button gor guitar -->
+                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cart content section -->
+<section class="container content-section">
+    <h2 class="section-header">CART</h2>
+
+    <!-- Add to cart list -->
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+    </div>
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$0</span>
+    </div>
+    <a href="storeForm.html">
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </a>
+</section>
+
+<div>
+    <!-- Buttons to change font size -->
+    <button id="increase">&uarr;A</button>
+    <button id="decrease">A&darr;</button>
+</div>
+
+<!-- Footer -->
+<div>
+    <footer class="footer">
+        <a href="homepage.html">
+            <img class="footer-logo" src="Assets/guitar.png" alt="logo"/>
+        </a>
+        <a href="homepage.html" class="footer-site-name">
+            <span id="footer-site-name">STUDIO<br>80</span>
+        </a>
+
+        <div class="footer-signUp-text">
+            <label for="newsletterEmailTextField" id="lblNewsLetterEmail">Subscribe to our newsletter to receive
+                updates and special announcements.</label><br>
+            <input id="newsletterEmailTextField" type="email" placeholder="Email address" />
+            <br/>
+            <!-- Button sign up and event handler -->
+            <button onclick="signInBtnClicked();" id="signUpBtnFooter">Sign up</button>
+        </div>
+
+        <!-- Footer links -->
+        <div class="footer-links">
+            <a href="news.html">NEWS</a><br>
+            <a href="imageSelector.html">TICKETS</a><br>
+            <a href="store.html">MERCH</a><br>
+            <a href="musicQuiz.html">QUIZ</a><br>
+            <a href="team.html">TEAM</a><br>
+            <a href="siteMap.html">SITEMAP</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">Page Developed By:<br>
+                <a href="student1EditorPage.html" class="page-editor">Nisal Bandara</a>
+            </span>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

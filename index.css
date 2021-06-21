@@ -1,0 +1,37 @@
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+/* background image  */
+body {
+    background-image: url('../Assets/LaunchPage/22.jpg');
+    background-size: cover;
+}
+
+/* heading layout and color */
+h1 {
+    font-family: 'Metal Mania', cursive;
+    font-size: 100px;
+    font-weight: lighter;
+    color: moccasin;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    margin-left: 350px;
+}
+
+/* THe desgin and colors of the text */
+#members {
+    font-family: 'Raleway';
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: papayawhip;
+}
+.names {
+    font-family: 'Raleway', cursive;
+    font-weight: bold;
+    color: powderblue;
+    margin-top: 100px;
+    font-size: 40px;
+}

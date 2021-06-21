@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://use.fontawesome.com/a2de691fc2.js"></script>
+
+    <link rel="stylesheet" href="Stylesheets/imageSelector.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- Roboto Mono -->
+
+
+    <script defer src="JavaScript/imageSelector.js"></script>
+    <title>Studio 80 | Book Tickets </title>
+</head>
+
+<body>
+    <!--  Header  -->
+    <header class="header">
+        <a href="homepage.html">
+            <img class="header-logo" src="Assets/guitar.png" alt="logo"/>
+        </a>
+        <a href="homepage.html" class="site-name">
+            <span id="site-name">STUDIO 80</span>
+        </a>
+        <nav class="header-nav">
+            <ul class="header-nav-links-container">
+                <!-- Adjust (.header-right -> margin-left value) when adding more items -->
+                <li><a class="header-nav-link" href="news.html">NEWS</a></li>
+                <li><a class="header-nav-link active-page" href="imageSelector.html">TICKETS</a></li>
+                <li><a class="header-nav-link" href="store.html">MERCH</a></li>
+                <li><a class="header-nav-link" href="team.html">TEAM</a></li>
+            </ul>
+        </nav>
+        <a id="feedbackButton" href="feedbackForm.html"><button>CONTACT US</button></a>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="#">Home</a>
+            <i class="fa fa-long-arrow-right breadcrumb-icon"></i>
+            <a href="#">Tickets</a>
+        </div>
+
+        <!-- Page Title -->
+        <div class="title" id="title">BOOK TICKETS</div>
+
+        <!-- Container 1 -->
+        <div class="container" id="container1">
+            <div class="container-header">
+                <div class="container-title" id="container1Header">1. SELECT TOUR</div>
+            </div>
+            <div class="options-container">
+                <div class="option" onclick="display('1'); return false">
+                    <!-- return false stops automatic page reload on JS scrollTo() method call -->
+                    <a href="" class="event-label">
+                        <div class="image-box">
+                            <img class="thumbnail" src="Assets/O2-London.jpg" alt=""/>
+                        </div>
+                        <div class="caption">
+                            Lewis Capaldi - The O2, London
+                        </div>
+                    </a>
+                </div>
+
+                <div class="option" onclick="display('2'); return false">
+                    <a href="" class="event-label">
+                        <div class="image-box">
+                            <img class="thumbnail" src="Assets/glastonbury-music-festival.jpg" alt=""/>
+                        </div>
+                        <div class="caption">
+                            NF - Glastonbury Music Festival
+                        </div>
+                    </a>
+                </div>
+
+                <div class="option" onclick="display('3'); return false">
+                    <a href="" class="event-label">
+                        <div class="image-box">
+                            <img class="thumbnail" src="Assets/Rebel-Entertainment-Complex.jpg" alt=""/>
+                        </div>
+                        <div class="caption">
+                            NF - Rebel Entertainment Centre, Toronto
+                        </div>
+                    </a>
+                </div>
+
+                <div class="option" onclick="display('4'); return false">
+                    <a href="" class="event-label">
+                        <div class="image-box">
+                            <img class="thumbnail" src="Assets/Madison-Square-Garden.jpg" alt=""/>
+                        </div>
+                        <div class="caption">
+                            Kanye West - Madison Square Garden, NYC
+                        </div>
+                    </a>
+                </div>
+
+                <div class="option" onclick="display('5'); return false" id="lastThumbnail">
+                    <a href="" class="event-label">
+                        <div class="image-box">
+                            <img class="thumbnail" src="Assets/ATT-Park-SanFrancisco.jpg" alt=""/>
+                        </div>
+                        <div class="caption">
+                            Ed Sheeran - AT&T Park, San Francisco
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display Container -->
+        <div class="container disabled" id="displayContainer">
+            <!-- Tour 1 -->
+            <div class="tour-details disabled" id="event-1">
+                <div class="display-container-title" id="description1">
+                    <span class="selected-image-title">LEWIS CAPALDI</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        THE 02, LONDON <i class="fa fa-circle"></i> 27<sup>TH</sup>AUGUST
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Assets/O2-London.jpg" alt="Lewis Capaldi performing in the 02
+                    theatre in London, 2018"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="tour-description">
+                        The 02 Arena, situated in the center of The 02
+                        entertainment complex on the Greenwhich Peninsula in
+                        Southeast London, has the second-highest seating
+                        capacity of any indoor venue in the United Kingdom
+                        and is the busiest music arena in the world.<br /><br />
+
+                        Catch Lewis Capaldi live on stage, performing from
+                        his new album
+                        <b>'Divinely Uninspired to a Hellish Extent'</b> on
+                        <b>August 27th</b>. Reserve your tickets now!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tour 2 -->
+            <div class="tour-details disabled" id="event-2">
+                <div class="display-container-title">
+                    <span class="selected-image-title">NF</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        GLASTONBURY MUSIC FESTIVAL
+                        <i class="fa fa-circle"></i> 28<sup>TH</sup> AUGUST
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Assets/glastonbury-music-festival.jpg" alt="NF performing at the
+                    Glastonbury Music Festival, 2019"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="tour-description">
+                        Glastonbury Festival takes place in Pilton, Somerset
+                        in England. It's a five-day music festival with
+                        leading Pop & Rock artists headlining each year as
+                        well as contemporary music, the festival hosts
+                        dance, comedy, theatre, circus, cabaret, and other
+                        arts.<br/><br/>
+
+                        Catch NF live on stage, performing from his new
+                        album <b>'The Search'</b> at this years Glastonbury
+                        Festival on <b>August 28th</b>. Limited Tickets
+                        available. Reserve yours now!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tour 3 -->
+            <div class="tour-details disabled" id="event-3">
+                <div class="display-container-title">
+                    <span class="selected-image-title">NF</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        REBEL ENTERTAINMENT CENTRE
+                        <i class="fa fa-circle"></i> 22<sup>ND</sup>
+                        SEPTEMBER
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Assets/Rebel-Entertainment-Complex.jpg" alt="NF performing, 2017"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="tour-description">
+                        Catch NF live on stage, performing from his new
+                        album <b>'The Search'</b> at the Rebel Entertainment
+                        Complex, located on the Polson Pier, Toronto, Canada
+                        on <b>September 22nd</b>. <br/><br/>
+                        Limited Tickets available. Reserve yours now and
+                        dance along to the tunes, overlooking the Toronto
+                        City skyline.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tour 4 -->
+            <div class="tour-details disabled" id="event-4">
+                <div class="display-container-title">
+                    <span class="selected-image-title">KANYE WEST</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        MADISON SQUARE GARDEN, NYC
+                        <i class="fa fa-circle"></i> 28<sup>TH</sup>
+                        SEPTEMBER
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Assets/Madison-Square-Garden.jpg" alt="Kanye West performing
+                    at Madison Square Garden, NYC, 2016"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="tour-description">
+                        Madison Square Garden, located in the heart of New
+                        York City, and home to the New York Rangers of the
+                        NHL, and the New York Knicks of the NBA, is also the
+                        second busiest music arena in the world.<br/><br/>
+
+                        Catch Kanye West live on stage, performing from his
+                        album <b>'Jesus is King'</b> on <b>September 28th</b>.
+                        Limited Tickets available. Reserve yours now!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tour 5 -->
+            <div class="tour-details disabled" id="event-5">
+                <div class="display-container-title">
+                    <span class="selected-image-title">ED SHEERAN</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        ORACLE PARK, CA <i class="fa fa-circle"></i> 10<sup>TH</sup>OCTOBER
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Assets/ATT-Park-SanFrancisco.jpg" alt="Ed Sheeran performing
+                    at the AT&T Park, 2018"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="tour-description">
+                        Oracle Park (formerly known as the AT&T Park),
+                        located in the South Beach neighbourhood of San
+                        Francisco, California, is the home to the San
+                        Francisco Giants, the city's Major League Baseball
+                        franchise. The stadium also plays host to various
+                        concerts and music festivals. <br/><br/>
+
+                        Catch Ed Sheeran live on stage, performing from his
+                        album <b>'No.6 Collaborations Project'</b> on
+                        <b>October 10th</b>. Limited Tickets available.
+                        Reserve yours now!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container 2 -->
+        <form action="" class="form" onsubmit="return formValidate();">
+            <div class="container" id="container2">
+                <div class="container-header">
+                    <div class="container-title">2. TICKET DETAILS</div>
+                </div>
+                <div class="contact-details-form">
+                    <!--  First Name -->
+                    <div class="firstName">
+                        <label for="firstName" id="lblFirstName" class="form-label">First Name:</label><br>
+                        <input type="text" id="firstName" class="form-text-field">
+                    </div>
+
+                    <!--  Last Name -->
+                    <div class="lastName">
+                        <label for="lastName" id="lblLastName" class="form-label">Last Name:</label><br>
+                        <input type="text" id="lastName" class="form-text-field">
+                    </div>
+
+                    <!--  Email -->
+                    <div class="email">
+                        <label for="email" id="lblEmail" class="form-label">Email:</label><br>
+                        <input type="email" id="email" class="form-text-field">
+                    </div>
+
+                    <!--  Address -->
+                    <div class="address">
+                        <label for="address" id="lblAddress" class="form-label">Address:</label><br>
+                        <input type="text" id="address" class="form-text-field">
+                    </div>
+
+                    <!--  Address Line 2 -->
+                    <div class="address2">
+                        <label for="address2" id="lblAddress2" class="form-label">Address Line 2:</label><br>
+                        <input type="text" id="address2" class="form-text-field">
+                    </div>
+
+                    <!--  City -->
+                    <div class="city">
+                        <label for="city" id="lblCity" class="form-label">City:</label><br>
+                        <input type="text" id="city" class="form-text-field">
+                    </div>
+
+                    <!--  Postal Code -->
+                    <div class="postalCode">
+                        <label for="postalCode" id="lblPostalCode" class="form-label">Postal Code:</label><br>
+                        <input type="text" id="postalCode" class="form-text-field">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container 3 -->
+            <div class="container" id="container3">
+                <div class="container-header">
+                    <div class="container-title">3. PAYMENT DETAILS</div>
+                </div>
+
+                <div class="payment-details-form">
+                    <!--  Card No -->
+                    <div class="cardNum">
+                        <label for="cardNum" id="lblCardNum" class="form-label">Card Number:</label><br>
+                        <input type="text" id="cardNum" class="form-text-field">
+                    </div>
+
+                    <!--  Expiry Date -->
+                    <div class="expDate">
+                        <label for="expDate" id="lblExpDate" class="form-label">Expiry Date:</label><br>
+                        <input type="text" id="expDate" class="form-text-field" placeholder=" mm / yy ">
+                    </div>
+
+                    <!--  CVV Code -->
+                    <div class="cvvCode">
+                        <label for="cvvCode" id="lblCVVCode" class="form-label">CVV Code:</label><br>
+                        <input type="text" id="cvvCode" class="form-text-field">
+                    </div>
+
+                    <!--  Submit Button -->
+                    <div class="submit-button">
+                        <input type="submit" value="CONFIRM BOOKING" id="submitButton">
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <!--  Background Color Changer -->
+        <select class="background-color-selector" onchange="changeBodyBg(this.value)">
+            <option value="" selected disabled hidden> -- Select Background Color -- </option>
+            <option value="#FFFFFF">White</option>
+            <option value="#C1A57B">Gold</option>
+            <option value="#30475E">Dark Blue</option>
+            <option value="#ECECEC">Grey</option>
+        </select>
+
+        <!--  Text Color Changer -->
+        <select class="text-color-selector" onchange="changeTextColor(this.value)">
+            <option value="" selected disabled hidden> -- Select Text Color -- </option>
+            <option value="#FFFFFF">White</option>
+            <option value="#C1A57B">Gold</option>
+            <option value="#30475E">Dark Blue</option>
+            <option value="#ECECEC">Grey</option>
+            <option value="#BF1010">Red</option>
+            <option value="#000000">Black</option>
+        </select>
+
+    </div>
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <a href="homepage.html">
+            <img class="footer-logo" src="Assets/guitar.png" alt="logo"/>
+        </a>
+        <a href="homepage.html" class="footer-site-name">
+            <span id="footer-site-name">STUDIO<br>80</span>
+        </a>
+
+        <div class="footer-signUp-text">
+<!--            Subscribe to our newsletter to receive<br />-->
+<!--            updates and special announcements.<br />-->
+            <label for="newsletterEmailTextField" id="lblNewsLetterEmail">Subscribe to our newsletter to receive
+                updates and special announcements.</label><br>
+            <input id="newsletterEmailTextField" type="email" placeholder="Email address" />
+            <br/>
+            <button onclick="signInBtnClicked();" id="signUpBtnFooter">Sign up</button>
+        </div>
+
+        <div class="footer-links">
+            <a href="news.html">NEWS</a><br>
+            <a href="imageSelector.html">TICKETS</a><br>
+            <a href="store.html">MERCH</a><br>
+            <a href="musicQuiz.html">QUIZ</a><br>
+            <a href="team.html">TEAM</a><br>
+            <a href="siteMap.html">SITEMAP</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">Page Developed By:<br>
+                <a href="student4EditorPage.html" class="page-editor">Chandira Gunatilleke</a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

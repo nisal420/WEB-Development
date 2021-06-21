@@ -1,0 +1,932 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* --------------------------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------- Header --------------------- */
+.header {
+    background-color: #222831;
+    min-height: 70px;
+    min-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*position: absolute; !* fixes white space issue on smaller displays *!*/
+    /* Fixed wont rezise the nav bar, Need another way to keep it on top!!*/
+    /* But without fixed no way to position the main container */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header-logo {
+    height: 60px;
+    cursor: pointer;
+
+    margin-top: 5px;
+    margin-left: 20px;
+    grid-column: 1/2;
+}
+
+.site-name {
+    grid-column: 2/3;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#site-name {
+    font-family: "Metal Mania", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+}
+
+#site-name:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav li,
+nav a {
+    font-family: "Metal Mania", sans-serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.active-page {
+    border-bottom: 3px solid white;
+}
+
+.active-page:hover {
+    border-bottom: 3px solid #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav {
+    grid-column: 11/12;
+
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.header-nav-links-container {
+    list-style: none; /* removes default bullet points */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav-links-container > li {
+    padding-left: 40px;
+}
+
+.header-nav-links-container > li:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav-link:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#feedbackButton {
+    grid-column: 12/12;
+}
+
+header button {
+    padding: 4px 15px;
+    margin-top: 17px;
+    margin-right: 20px;
+    width: 160px;
+
+    background-color: rgba(256, 256, 256, 1);
+    cursor: pointer;
+    font-family: "Metal Mania", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #222831;
+    text-decoration: none;
+    border: none;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #C1A57B;
+    color: black;
+
+    transition: all 0.3s ease 0s;
+}
+
+/* -------------------------------------------------- */
+
+/* ----------------- Main Container ----------------- */
+.main-container {
+    margin-top: 90px;
+    /*background-color: #838383;*/
+    /*min-width: 80%;*/
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /*align-items: center;*/
+    /*justify-items: center;*/
+
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(6vh, auto));
+    grid-template-rows: repeat(12, auto);
+}
+
+/* ------------------ Breadcrumbs ------------------ */
+
+.breadcrumbs {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-column: span 12;
+    grid-row: 1/1;
+
+    margin-left: 5%;
+}
+
+.breadcrumbs > a {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000000;
+
+    transition: all 0.1s ease-in-out 0s;
+
+}
+
+.breadcrumbs > a:hover {
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid black;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.breadcrumb-icon {
+    padding: 0 5px;
+}
+
+/* --------------------- Title --------------------- */
+.title {
+    margin-top: 20px;
+    font-family: "Metal Mania", serif;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    grid-row: 2/2;
+    grid-column: 1/13;
+    margin-left: 5%;
+}
+
+/* ------------------ Container 1 ------------------ */
+.container {
+    grid-column: 1/13;
+    grid-row: 3/3;
+    min-height: 300px;
+    /*max-height: auto;*/
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #ECECEC;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
+}
+
+/* Container Header */
+.container-header {
+    grid-column: 1/5;
+    grid-row: 1/1;
+    min-height: 48px;
+    max-height: 48px;
+
+    background-color: #30475E;
+}
+
+.container-title {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: white;
+
+    padding: 2px 20px;
+}
+
+/* Tour Options Container */
+.options-container {
+    grid-column: 1/5;
+    grid-row: 2/5;
+
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: inherit;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    /*overflow: scroll;*/
+
+}
+
+.thumbnail {
+    width: 300px;
+    height: 167px;
+    /*padding: 10px;*/
+    margin-left: 30px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border: 3px solid #30475E;
+    filter: brightness(80%);
+}
+
+#lastThumbnail {
+    margin-right: 30px;
+}
+
+.thumbnail:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    filter: brightness(100%);
+}
+
+.caption {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    color: #000000;
+
+    margin-top: 5px;
+    padding-bottom: 25px;
+    max-width: 300px;
+    margin-left: 30px;
+}
+
+.event-label {
+    text-decoration: none;
+}
+
+/* --------------- Display Container  -------------- */
+#displayContainer {
+    grid-row: 4/4;
+
+    background-color: #30475E;
+    min-height: 500px;
+
+    margin-bottom: 20px;
+}
+
+.container.disabled {
+    display: none;
+}
+
+.tour-details.disabled {
+    display: none;
+}
+
+.tour-details {
+    display: grid;
+    /*grid-template-rows: 10% 45% 45%;*/
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
+    grid-row-gap: 1em;
+
+    padding-bottom: 30px;
+}
+
+.selected-thumbnail {
+    width: 500px;
+    height: auto;
+    border: 4px solid #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.selected-image-title {
+    font-family: "Grenze Gotisch", serif;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    letter-spacing: 9px;
+}
+
+.subtitle {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.tour-description {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+.display-container-title {
+    grid-column: 1/3;
+    grid-row: 1/2;
+
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.display-container-subtitle {
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    margin-top: 0;
+    margin-left: 30px;
+}
+
+.display-container-image {
+    grid-column: 4/5;
+    grid-row: 1/4;
+
+    margin-top: 30px;
+    margin-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.display-container-description {
+    grid-column: 1/4;
+    grid-row: 3/5;
+
+    margin-top: 0;
+    margin-left: 30px;
+    /*padding-right: 20px;*/
+}
+
+.fa-circle {
+    font-size: 0.8em;
+    align-self: center;
+}
+
+/*@media (min-width: 1300px) {*/
+/*    .selected-thumbnail {*/
+/*        width: 600px;*/
+/*    }*/
+/*}*/
+
+@media (max-width: 1200px) {
+    /* When screen width is less than 1100px : */
+    .display-container-title {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .display-container-subtitle {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .display-container-image {
+        grid-column: 4/5;
+        grid-row: 3/5;
+        margin-top: 10px;
+    }
+
+    .display-container-description {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .selected-thumbnail {
+        width: 370px;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    .display-container-title {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    .display-container-subtitle {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    .display-container-image {
+        grid-column: 4/5;
+        grid-row: 3/5;
+        margin-top: 10px;
+    }
+
+    .display-container-description {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .selected-thumbnail {
+        width: 420px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .display-container-image {
+        grid-column: 4/5;
+        grid-row: 2/5;
+        margin-top: 50px;
+    }
+
+    .selected-thumbnail {
+        width: 500px;
+    }
+}
+/* ------------------ Container 2 ------------------ */
+.form {
+    grid-column: 1/13;
+}
+
+#container2 {
+    grid-row: 5/5;
+    min-width: auto;
+    padding-bottom: 60px;
+}
+
+.form-label {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 60%;
+    max-width: 500px;
+
+    margin-left: 40px;
+}
+
+.form-text-field {
+    font-family: "Darker Grotesque", "Courier New", monospace;
+    font-size: 25px;
+    letter-spacing: 2px;
+
+    padding: 10px 10px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border: 0.3px solid #454545;
+    width: 60%;
+    max-width: 500px;
+    min-height: 50px;
+}
+
+.contact-details-form {
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.firstName {
+    margin-top: 25px;
+    grid-column: 1/2;
+}
+
+#firstName {
+    width: 90%;
+    max-width: 230px;
+}
+
+.lastName {
+    margin-top: 25px;
+    grid-column: 2/3;
+}
+
+#lblLastName {
+    margin-left: -20%;
+    width: 90%;
+    max-width: 230px;
+}
+
+#lastName {
+    margin-left: -20%;
+    width: 90%;
+    /*min-width: 250px;*/
+    max-width: 230px;
+}
+
+.email {
+    margin-top: 25px;
+    grid-column: 1/4;
+}
+
+.address {
+    margin-top: 25px;
+    grid-column: 1/4;
+}
+
+.address2 {
+    margin-top: 25px;
+    grid-column: 1/4;
+}
+
+.city {
+    margin-top: 25px;
+    grid-column: 1/2;
+}
+#city {
+    width: 90%;
+    max-width: 230px;
+}
+
+.postalCode {
+    margin-top: 25px;
+    grid-column: 2/3;
+}
+#lblPostalCode {
+    margin-left: -20%;
+    width: 90%;
+    max-width: 230px;
+}
+
+#postalCode {
+    margin-left: -20%;
+    width: 90%;
+    /*min-width: 250px;*/
+    max-width: 230px;
+}
+
+@media (max-width: 1280px) {
+    #lblLastName {margin-left: -5%}
+    #lastName {margin-left: -5%}
+    #lblPostalCode {margin-left: -5%}
+    #postalCode {margin-left: -5%}
+}
+
+@media (max-width: 1155px) {
+    #lblLastName {margin-left: 20px}
+    #lastName {margin-left: 20px}
+    #lblPostalCode {margin-left: 20px}
+    #postalCode {margin-left: 20px}
+}
+/* ---------- Custom Drop Down Menu ---------- */
+/* The container must be positioned relative: */
+/*.custom-select {*/
+/*    grid-column: 1/4;*/
+/*    margin-top: 25px;*/
+/*    margin-left: 40px;*/
+/*    !*max-width: 590px;*!*/
+/*    width: 60%;*/
+/*    max-width: 500px;*/
+
+/*    position: relative;*/
+/*    font-family: "Roboto Mono", sans-serif;*/
+/*    font-size: 20px;*/
+/*    border: 1px solid black;*/
+/*    letter-spacing: 1px;*/
+/*}*/
+
+/*.custom-select select {*/
+/*    display: none; !*hide original SELECT element: *!*/
+/*}*/
+
+/*.select-selected {*/
+/*    background-color: #ffffff;*/
+/*}*/
+
+/*!* Style the arrow inside the select element: *!*/
+/*.select-selected:after {*/
+/*    position: absolute;*/
+/*    content: "";*/
+/*    top: 25px;*/
+/*    right: 30px;*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*    border: 6px solid;*/
+/*    border-color: black transparent transparent transparent;*/
+/*}*/
+
+/*!* Point the arrow upwards when the select box is open (active): *!*/
+/*.select-selected.select-arrow-active:after {*/
+/*    border-color: transparent transparent black transparent;*/
+/*    top: 15px;*/
+/*}*/
+
+/*!* style the items (options), including the selected item: *!*/
+/*.select-items div,.select-selected {*/
+/*    color: black;*/
+/*    padding: 15px 16px;*/
+/*    !*border: 1px solid tr;*!*/
+/*    !*border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;*!*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*!* Style items (options): *!*/
+/*.select-items {*/
+/*    position: absolute;*/
+/*    background-color: #ffffff;*/
+/*    top: 100%;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    z-index: 99;*/
+/*}*/
+
+/*!* Hide the items when the select box is closed: *!*/
+/*.select-hide {*/
+/*    display: none;*/
+/*}*/
+
+/*.select-items div:hover, .same-as-selected {*/
+/*    background-color: #c7c7c7;*/
+/*}*/
+
+/*-----------------------*/
+
+
+
+
+/* ------------------ Container 3 ------------------ */
+#container3 {
+    grid-row: 6/6;
+
+    /*margin-bottom: 40px;*/
+}
+
+.payment-details-form {
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+    display: grid;
+    grid-template-rows: repeat(10, auto);
+    grid-template-columns: repeat(3, 1fr);
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.cardNum {
+    grid-column: 1/4;
+}
+
+.expDate {
+    margin-top: 20px;
+    grid-column: 1/2;
+}
+
+#expDate {
+    min-width: 200px;
+}
+
+.cvvCode {
+    grid-column: 2/3;
+    margin-top: 20px;
+}
+
+#lblCVVCode {
+    margin-left: -20%;
+    width: 90%;
+    max-width: 230px;
+}
+
+#cvvCode {
+    margin-left: -20%;
+    width: 90%;
+    /*min-width: 250px;*/
+    max-width: 230px;
+}
+
+@media (max-width: 1280px) {
+    #lblCVVCode {margin-left: -5%}
+    #cvvCode {margin-left: -5%}
+}
+
+@media (max-width: 1155px) {
+    #lblCVVCode {margin-left: 20px}
+    #cvvCode {margin-left: 20px}
+}
+
+.submit-button {
+    grid-column: 1/4;
+    grid-row: 3/3;
+}
+
+#submitButton {
+    padding: 10px 15px;
+    margin-top: 40px;
+    margin-left: 40px;
+    min-width: 160px;
+
+    background-color: #30475E;
+    cursor: pointer;
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease 0s;
+}
+
+#submitButton:hover {
+    background-color: #C1A57B;
+    color: black;
+
+    transition: all 0.3s ease 0s;
+}
+
+/* -------------------------------------- Background Color Picker ---------------------------- */
+.background-color-selector {
+    grid-row: 7/7;
+    grid-column: 1/13;
+    margin-left: 5%;
+    margin-top: 40px;
+    max-width: 40%;
+    padding: 10px 10px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* -------------------------------------- Background Color Picker ---------------------------- */
+.text-color-selector {
+    grid-row: 8/8;
+    grid-column: 1/13;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    max-width: 40%;
+    padding: 10px 10px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* ---------------------------------------  Footer  ------------------------------------------- */
+.footer {
+    background-color: #222831;
+    min-height: 200px;
+    min-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(3, auto);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.footer-logo {
+    grid-row: 1/4;
+    grid-column: 1/2;
+
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.footer-site-name {
+    grid-row: 1/4;
+    grid-column: 2/3;
+
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+#footer-site-name {
+    font-family: "Metal Mania", serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+#footer-site-name:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-signUp-text {
+    grid-row: 1/4;
+    grid-column: 3/4;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 70%;
+    max-width: 450px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#newsletterEmailTextField {
+    padding: 5px 8px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+#newsletterEmailTextField:focus {
+    border: 3px solid #C1A57B;
+    outline: none;
+    color: #C1A57B;
+}
+
+#signUpBtnFooter {
+    padding: 5px 8px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: #FFFFFF;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #000000;
+}
+
+#signUpBtnFooter:hover {
+    background-color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-links {
+    grid-row: 1/4;
+    grid-column: 4/5;
+    margin-top: 30px;
+    /*margin-left: 30px;*/
+}
+
+.footer-links > a {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    /*margin-left: 30px;*/
+    margin-top: 8px;
+}
+
+.footer-links > a:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-editor {
+    grid-row: 1/4;
+    grid-column: 5/6;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.page-editor {
+    text-decoration: none;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.page-editor:hover {
+    color: #C1A57B;
+    border-bottom: 2px solid #C1A57B;
+    transition: all 0.3s ease 0s;
+}

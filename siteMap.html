@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Studio 80 | Sitemap </title>
+    <link rel="stylesheet" href="Stylesheets/siteMap.css">
+
+    <script defer src="JavaScript/imageSelector.js"></script>
+</head>
+<body>
+    <!--  Header  -->
+    <header class="header">
+        <a href="homepage.html">
+            <img class="header-logo" src="Assets/guitar.png" alt="logo"/>
+        </a>
+        <a href="homepage.html" class="site-name">
+            <span id="site-name">STUDIO 80</span>
+        </a>
+        <nav class="header-nav">
+            <ul class="header-nav-links-container">
+                <li><a class="header-nav-link" href="news.html">NEWS</a></li>
+                <li><a class="header-nav-link" href=imageSelector.html>TICKETS</a></li>
+                <li><a class="header-nav-link" href="store.html">MERCH</a></li>
+                <li><a class="header-nav-link" href="team.html">TEAM</a></li>
+            </ul>
+        </nav>
+        <a id="feedbackButton" href="feedbackForm.html"><button>CONTACT US</button></a>
+    </header>
+
+    <div class="topic" id="title">SITE MAP</div>
+
+    <!-- Site Map -->
+    <div class="sitemap">
+        <svg class="site-map" viewBox="35 0 1024 700" xmlns="http://www.w3.org/2000/svg">
+
+            <!--  Home Page -->
+            <a href="homepage.html">
+                <g class="site-link-button" id="homePage">
+                    <rect height="40" width="160" x="470" y="150" class="site-link" id="homePageBox" focusable="true"></rect>
+                    <text x="495" y="177" class="link-text" id="homePageText">Home Page</text>
+                </g>
+            </a>
+
+            <!--  About Us -->
+            <a href="team.html">
+                <g class="site-link-button" id="aboutUs">
+                    <rect height="40" width="160" x="70" y="270" class="site-link" id="aboutUsBox"></rect>
+                    <text x="125" y="297" class="link-text" id="aboutUsText">Team</text>
+                </g>
+            </a>
+
+            <!--  Tickets -->
+            <a href="imageSelector.html">
+                <g class="site-link-button" id="aboutUs">
+                    <rect height="40" width="160" x="270" y="270" class="site-link" id="ticketsBox"></rect>
+                    <text x="315" y="297" class="link-text" id="ticketsText">Tickets</text>
+                </g>
+            </a>
+
+            <!--  Merch -->
+            <a href="store.html">
+                <g class="site-link-button" id="merch">
+                    <rect height="40" width="160" x="270" y="340" class="site-link" id="merchBox"></rect>
+                    <text x="320" y="367" class="link-text" id="merchText">Merch</text>
+                </g>
+            </a>
+
+            <!--  Weekly Quiz -->
+            <a href="musicQuiz.html">
+                <g class="site-link-button" id="quiz">
+                    <rect height="40" width="160" x="470" y="270" class="site-link" id="quizBox"></rect>
+                    <text x="490" y="297" class="link-text" id="quizText">Weekly Quiz</text>
+                </g>
+            </a>
+
+            <!--  News -->
+            <a href="news.html">
+                <g class="site-link-button" id="news">
+                    <rect height="40" width="160" x="670" y="270" class="site-link" id="newsBox"></rect>
+                    <text x="725" y="297" class="link-text" id="newsText">News</text>
+                </g>
+            </a>
+
+            <!--  Article 1 -->
+            <a href="article1.html">
+                <g class="site-link-button" id="article1">
+                    <rect height="40" width="160" x="700" y="340" class="site-link" id="article1Box"></rect>
+                    <text x="740" y="368" class="link-text" id="article1Text">Article 1</text>
+                </g>
+            </a>
+
+            <!--  Article 2 -->
+            <a href="article2.html">
+                <g class="site-link-button" id="article2">
+                    <rect height="40" width="160" x="700" y="410" class="site-link" id="article2Box"></rect>
+                    <text x="740" y="438" class="link-text" id="article2Text">Article 2</text>
+                </g>
+            </a>
+
+            <!--  Article 3 -->
+            <a href="article3.html">
+                <g class="site-link-button" id="article3">
+                    <rect height="40" width="160" x="700" y="480" class="site-link" id="article3Box"></rect>
+                    <text x="740" y="508" class="link-text" id="article3Text">Article 3</text>
+                </g>
+            </a>
+
+            <!--  Article 4 -->
+            <a href="article4.html">
+                <g class="site-link-button" id="article4">
+                    <rect height="40" width="160" x="700" y="550" class="site-link" id="article4Box"></rect>
+                    <text x="740" y="578" class="link-text" id="article4Text">Article 4</text>
+                </g>
+            </a>
+
+            <!-- Feedback -->
+            <a href="feedbackForm.html">
+                <g class="site-link-button" id="quiz">
+                    <rect height="40" width="160" x="870" y="270" class="site-link" id="feedbackBox"></rect>
+                    <text x="905" y="297" class="link-text" id="feedbackText">Feedback</text>
+                </g>
+            </a>
+
+            <line x1="550" y1="190" x2="550" y2="270" class="sitemap-line"></line> <!-- Homepage -> Weekly Quiz -->
+            <line x1="550" y1="220" x2="950" y2="220" class="sitemap-line"></line> <!-- Main Horizontal Line from Main Quiz to Feedback -->
+            <line x1="550" y1="220" x2="150" y2="220" class="sitemap-line"></line> <!-- Main Horizontal Line from Main Quiz to About Us -->
+
+            <line x1="150" y1="218" x2="150" y2="270" class="sitemap-line"></line> <!-- About Us Vertical Line -->
+            <line x1="750" y1="218" x2="750" y2="270" class="sitemap-line"></line> <!-- News Vertical Line -->
+            <line x1="950" y1="218" x2="950" y2="270" class="sitemap-line"></line> <!-- Feedback Vertical Line -->
+            <line x1="250" y1="218" x2="250" y2="364" class="sitemap-line"></line> <!-- Main Horizontal Line -> Shop Items -->
+            <line x1="248" y1="290" x2="270" y2="290" class="sitemap-line"></line> <!-- Shop Items -> Tickets -->
+            <line x1="248" y1="364" x2="270" y2="364" class="sitemap-line"></line> <!-- Shop Items -> Merch -->
+
+            <line x1="680" y1="310" x2="680" y2="570" class="sitemap-line"></line> <!-- News -> Articles -->
+            <line x1="680" y1="360" x2="700" y2="360" class="sitemap-line"></line> <!-- News -> Article 1 -->
+            <line x1="680" y1="430" x2="700" y2="430" class="sitemap-line"></line> <!-- News -> Article 2 -->
+            <line x1="680" y1="500" x2="700" y2="500" class="sitemap-line"></line> <!-- News -> Article 3 -->
+            <line x1="678" y1="570" x2="700" y2="570" class="sitemap-line"></line> <!-- News -> Article 4 -->
+
+        </svg>
+    </div>
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <a href="homepage.html">
+            <img class="footer-logo" src="Assets/guitar.png" alt="logo"/>
+        </a>
+        <a href="homepage.html" class="footer-site-name">
+            <span id="footer-site-name">STUDIO<br>80</span>
+        </a>
+
+        <div class="footer-signUp-text">
+            <label for="newsletterEmailTextField" id="lblNewsLetterEmail">Subscribe to our newsletter to receive
+                updates and special announcements.</label><br>
+            <input id="newsletterEmailTextField" type="email" placeholder="Email address" />
+            <br/>
+            <button onclick="signInBtnClicked();" id="signUpBtnFooter">Sign up</button>
+        </div>
+
+        <div class="footer-links">
+            <a href="news.html">NEWS</a><br>
+            <a href="imageSelector.html">TICKETS</a><br>
+            <a href="store.html">MERCH</a><br>
+            <a href="musicQuiz.html">QUIZ</a><br>
+            <a href="team.html">TEAM</a><br>
+            <a href="siteMap.html">SITEMAP</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">Page Developed By:<br>
+                <a href="student4EditorPage.html" class="page-editor">Chandira Gunatilleke</a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
+
+

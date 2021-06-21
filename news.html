@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Studio 80 | News </title>
+    <link rel="stylesheet" href="Stylesheets/news.css">
+    <script src="https://use.fontawesome.com/a2de691fc2.js"></script>
+
+    <script defer src="JavaScript/imageSelector.js"></script>
+</head>
+<body>
+    <!--  Header  -->
+    <header class="header">
+        <a href="homepage.html">
+            <img class="header-logo" src="Assets/guitar.png" alt="logo"/>
+        </a>
+        <a href="homepage.html" class="site-name">
+            <span id="site-name">STUDIO 80</span>
+        </a>
+        <nav class="header-nav">
+            <ul class="header-nav-links-container">
+                <!-- Adjust (.header-right -> margin-left value) when adding more items -->
+                <li><a class="header-nav-link active-page" href="news.html">NEWS</a></li>
+                <li><a class="header-nav-link" href=imageSelector.html>TICKETS</a></li>
+                <li><a class="header-nav-link" href="store.html">MERCH</a></li>
+                <li><a class="header-nav-link" href="team.html">TEAM</a></li>
+            </ul>
+        </nav>
+        <a id="feedbackButton" href="feedbackForm.html"><button>CONTACT US</button></a>
+    </header>
+
+
+    <div class="main-container">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs">
+            <a href="#">Home</a>
+            <i class="fa fa-long-arrow-right breadcrumb-icon"></i>
+            <a href="#">News</a>
+        </div>
+
+        <!--  Page Title  -->
+        <div class="topic" id="title">NEWS</div>
+
+
+        <!--  Article 1  -->
+        <div class="article-container article-1-container">
+            <a href="article1.html" class="link-to-article">
+                <img src="Assets/News/kanye.jpg" alt="" id="article1Thumbnail">
+                <div class="title">Kanye West Holds Presidential Campaign Event in South Carolina</div>
+                <div class="subtitle">The event took place at North Charleston’s Exquis Event Center</div>
+            </a>
+        </div>
+
+        <!--  Article 2  -->
+        <div class="article-container article-2-container">
+            <a href="article2.html" class="link-to-article">
+                <img src="Assets/News/charliXCX.png" alt="" id="article2Thumbnail">
+                <div class="title">Charli XCX Announces New Documentary About Quarantine Album</div>
+                <div class="subtitle">'6ft Apart was shot' at home during the sessions for 'how i’m feeling now'</div>
+            </a>
+        </div>
+
+        <!--  Article 3  -->
+        <div class="article-container article-3-container">
+            <a href="article3.html" class="link-to-article">
+                <img src="Assets/News/Doves.jpg" alt="" id="article3Thumbnail" >
+                <div class="title" id="title3">Doves Announce First Album in 11 Years</div>
+                <div class="subtitle">The Universal Want is the UK band’s follow-up to 2009’s 'Kingdom of Rust'</div>
+            </a>
+        </div>
+
+        <!--  Article 4  -->
+        <div class="article-container article-4-container">
+            <a href="article4.html" class="link-to-article">
+                <img src="Assets/News/RoyalAlbertHall.jpg" alt="" id="article4Thumbnail" >
+                <div class="title" id="title4">England Will Allow Indoor Concerts Beginning Next Month</div>
+                <div class="subtitle" id="subtitle4">Social distancing will be mandatory among audience members in the next stage
+                    of the country’s reopening plan</div>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!--  Footer  -->
+    <footer class="footer">
+        <a href="homepage.html">
+            <img class="footer-logo" src="Assets/guitar.png" alt="logo"/>
+        </a>
+        <a href="homepage.html" class="footer-site-name">
+            <span id="footer-site-name">STUDIO<br>80</span>
+        </a>
+
+        <div class="footer-signUp-text">
+            <!--            Subscribe to our newsletter to receive<br />-->
+            <!--            updates and special announcements.<br />-->
+            <label for="newsletterEmailTextField" id="lblNewsLetterEmail">Subscribe to our newsletter to receive
+                updates and special announcements.</label><br>
+            <input id="newsletterEmailTextField" type="email" placeholder="Email address" />
+            <br/>
+            <button onclick="signInBtnClicked();" id="signUpBtnFooter">Sign up</button>
+        </div>
+
+        <div class="footer-links">
+            <a href="news.html">NEWS</a><br>
+            <a href="imageSelector.html">TICKETS</a><br>
+            <a href="store.html">MERCH</a><br>
+            <a href="musicQuiz.html">QUIZ</a><br>
+            <a href="team.html">TEAM</a><br>
+            <a href="siteMap.html">SITEMAP</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">Page Developed By:<br>
+                <a href="student4EditorPage.html" class="page-editor">Chandira Gunatilleke</a>
+            </span>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;531;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: "Metal Mania";
+    src: url("Fonts/Metal Mania/MetalMania-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("Fonts/Darker Grotesque/DarkerGrotesque-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("Fonts/Darker Grotesque/DarkerGrotesque-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("Fonts/Darker Grotesque/DarkerGrotesque-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("Fonts/Darker Grotesque/DarkerGrotesque-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("Fonts/Darker Grotesque/DarkerGrotesque-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("Fonts/Darker Grotesque/DarkerGrotesque-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Darker Grotesque";
+    src: url("Fonts/Darker Grotesque/DarkerGrotesque-Black.ttf");
+    font-weight: 900;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------- Header --------------------- */
+.header {
+    background-color: #222831;
+    min-height: 70px;
+    min-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    /*position: absolute; !* fixes white space issue on smaller displays *!*/
+    /* Fixed wont rezise the nav bar, Need another way to keep it on top!!*/
+    /* But without fixed no way to position the main container */
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);*/
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header-logo {
+    height: 60px;
+    cursor: pointer;
+
+    margin-top: 5px;
+    margin-left: 20px;
+    grid-column: 1/2;
+}
+
+.site-name {
+    grid-column: 2/3;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#site-name {
+    font-family: "Metal Mania", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+}
+
+#site-name:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav li,
+nav a {
+    font-family: "Metal Mania", sans-serif;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.active-page {
+    border-bottom: 3px solid white;
+}
+
+.active-page:hover {
+    border-bottom: 3px solid #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav {
+    grid-column: 11/12;
+
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.header-nav-links-container {
+    list-style: none; /* removes default bullet points */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.header-nav-links-container > li {
+    padding-left: 40px;
+}
+
+.header-nav-links-container > li:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.header-nav-link:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#feedbackButton {
+    grid-column: 12/12;
+}
+
+header button {
+    padding: 4px 15px;
+    margin-top: 17px;
+    margin-right: 20px;
+    width: 160px;
+
+    background-color: rgba(256, 256, 256, 1);
+    cursor: pointer;
+    font-family: "Metal Mania", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #222831;
+    text-decoration: none;
+    border: none;
+    letter-spacing: 1px;
+
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #C1A57B;
+    color: black;
+
+    transition: all 0.3s ease 0s;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ---------------------------------------  Footer  ------------------------------- */
+.footer {
+    background-color: #222831;
+    min-height: 200px;
+    min-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-rows: repeat(3, auto);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.footer-logo {
+    grid-row: 1/4;
+    grid-column: 1/2;
+
+    height: 150px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.footer-site-name {
+    grid-row: 1/4;
+    grid-column: 2/3;
+
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+#footer-site-name {
+    font-family: "Metal Mania", serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+#footer-site-name:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-signUp-text {
+    grid-row: 1/4;
+    grid-column: 3/4;
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 70%;
+    max-width: 450px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#newsletterEmailTextField {
+    padding: 5px 8px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    border: 3px solid #FFFFFF;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+#newsletterEmailTextField:focus {
+    border: 3px solid #C1A57B;
+    outline: none;
+    color: #C1A57B;
+}
+
+#signUpBtnFooter {
+    padding: 5px 8px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 100%;
+    background-color: #FFFFFF;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    color: #000000;
+}
+
+#signUpBtnFooter:hover {
+    background-color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-links {
+    grid-row: 1/4;
+    grid-column: 4/5;
+    margin-top: 30px;
+    /*margin-left: 30px;*/
+}
+
+.footer-links > a {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    /*margin-left: 30px;*/
+    margin-top: 8px;
+}
+
+.footer-links > a:hover {
+    color: #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-editor {
+    grid-row: 1/4;
+    grid-column: 5/6;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.page-editor {
+    text-decoration: none;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.page-editor:hover {
+    color: #C1A57B;
+    border-bottom: 2px solid #C1A57B;
+    transition: all 0.3s ease 0s;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+.title-container {
+    /*width: 90%;*/
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding-bottom: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 10px;
+    /*background-color: grey;*/
+}
+
+.breadcrumbs {
+    grid-column: 1/13;
+    grid-row: 1/1;
+
+    /*margin-left: 5%;*/
+}
+
+.breadcrumbs > a {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #000000;
+
+    transition: all 0.1s ease-in-out 0s;
+
+}
+
+.breadcrumbs > a:hover {
+    /*text-decoration: underline;*/
+    border-bottom: 2px solid black;
+    transition: all 0.1s ease-in-out 0s;
+}
+
+.breadcrumb-icon {
+    padding: 0 5px;
+}
+
+.article-title {
+    font-family: "Grenze Gotisch", serif;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    grid-row: 2/2;
+    grid-column: 1/13;
+    /*margin-left: 5%;*/
+    margin-top: 20px;
+}
+
+.article-sub-title {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    grid-row: 3/3;
+    grid-column: 1/13;
+    /*margin-left: 5%;*/
+    margin-top: 20px;
+}
+
+.article-image {
+    grid-row: 4/4;
+    grid-column: 1/13;
+
+    width: 100%;
+    /*margin-top: 20px;*/
+}
+
+.article-container {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 850px;
+
+    background-color: #ECECEC;
+    padding: 30px 25px;
+}
+
+.article-content {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 25px;
+}
